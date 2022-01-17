@@ -128,6 +128,7 @@ header {
     flex-direction: column;
     justify-content: center;
     color: white;
+    /* border: 2px solid green; */
     /* overflow: scroll; */
     /* border: 2px solid green; */
 }
