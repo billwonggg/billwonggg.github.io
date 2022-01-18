@@ -1,3 +1,7 @@
+html {
+    font-size: 25px;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -31,7 +35,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 10px solid rgb(212, 18, 186); */
 }
 
 #canvas1 {
@@ -40,14 +43,14 @@ header {
     background-color: white;
 }
 
-/* arrow */
+/* arrow pointing down */
 .scroll-down {
     position: absolute;
     left: 50%;
     bottom: 50px;
     display: block;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     z-index: 10;
 
     width: 13px;
@@ -80,84 +83,43 @@ header {
     100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
 
-/* Change fonts depending on device */
 /* If the screen size is 501px wide or more */
 @media screen and (min-width: 501px) {
-    .intro h1 {
-        font-size: 110px;
-    }
-    .intro p {
-        font-size: 30px;
-    }
-    .about h1 {
-        font-size: 80px;
-    }
-    
-    .about h2 {
-        font-size: 40px;
-    }
-    
-    .about p {
-        font-size: 25px;
-    } 
-    .about .two {
-        font-size: 30px;
-    }
     .links {
         flex-direction: row;
     }
-    .individualLink a {
-        font-size: 22px;
+    .about p {
+        line-height: 40px;
     }
 }
 
 /* If the screen size is 500px wide or less */
 @media screen and (max-width: 500px) {
-    .intro h1 {
-        font-size: 80px;
+    html {
+        font-size: 18px;
     }
-    .intro p {
-        font-size: 25px;
-    }
-    .about h1 {
-        font-size: 60px;
-    }
-    
-    .about h2 {
-        font-size: 30px;
-    }
-    
     .about p {
-        font-size: 17px;
-    }
-    
-    .about .two {
-        font-size: 20px;
+        line-height: 35px;
     }
     .links {
         flex-direction: column;
         align-items: flex-start;
     }
-    .individualLink a {
-        font-size: 16px;
-    }
-    footer {
-        font-size: 14px;
-    }
 }
 
 .intro {
-    margin: 0 10px;
+    margin: 10px 10px;
     width: 100%;
     max-width: 900px;
-    border-radius: 40px;
+    border-radius: 60px;
     border: 10px solid rgba(2, 22, 70, 0.5);
     background-color: rgba(62,114,239, 0.4);
-    padding: 0px 40px; 
+    padding: 0px 35px; 
 }
 
 /* Bill Wong */
 .intro h1 {
+    font-size: 4.4rem; /* 110px */
     font-family: 'Squada One', sans-serif;
     color: black;
     font-weight: 700;
@@ -166,9 +128,22 @@ header {
 
 /* 2nd Year student */
 .intro p {
+    font-size: 1.2rem; /* 30px */
     text-align: center;
     font-family: 'Poppins', sans-serif;
     /* border: 2px solid red; */
+}
+
+.about {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 40px 30px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    /* border: 2px solid green; */
 }
 
 @keyframes gradient {
@@ -183,19 +158,6 @@ header {
     }
 }
 
-.about {
-    margin: 0 auto;
-    max-width: 1100px;
-    padding: 40px 30px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    /* border: 2px solid green; */
-    /* overflow: scroll; */
-}
-
 .about_bg {
     width: 100%;
     /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
@@ -206,21 +168,24 @@ header {
 }
 
 .about h1 {
+    font-size: 3.2rem; /* 80px */
     text-align: center;
     font-weight: 700;
     /* border: 2px solid red; */
 }
 
 .about h2 {
+    font-size: 1.6rem; /* 40px */
     font-weight: 600;
     /* border: 2px solid red; */
 }
 
 .about p {
-    line-height: 40px;
+    font-size: 1rem; /* 25px */
 }
 
 .about .two {
+    font-size: 1.2rem; /* 30px */
     font-weight: 600;
 }
 
@@ -235,8 +200,8 @@ header {
 
 .about img{
     position: relative;
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     margin: 10px 15px;
     background-color: white;
     padding: 2px;
@@ -245,27 +210,28 @@ header {
 
 .links {
     /* border: 4px solid green; */
+    font-size: 0.9rem; /* 22px */
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .individualLink {
-    /* border: 4px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 4px solid red; */
 }
 
 /* hyperlinks for platforms */
 .individualLink a {
-    border-radius: 14px;
+    min-width: 12ch;
+    border-radius: 22px;
     font-weight: 600;
     text-align: center; 
     text-decoration: none;
     transition: transform .2s;
-    padding: 2px 14px;
+    padding: 4px 10px;
 }
 
 .individualLink a:link, .individualLink a:visited {
@@ -279,14 +245,15 @@ header {
     background-color: white;
     font-weight: 700;
     color: black;
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 footer {
     height: 20px;
-    /* border: 2px solid red; */
+    font-size: 0.65rem; /* 16px */
     padding: 5px;
     text-align: center;
     background-color: black;
     color: lightgrey;
+    /* border: 2px solid red; */
 }
