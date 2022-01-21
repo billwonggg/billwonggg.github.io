@@ -109,7 +109,7 @@ header {
     display: block;
     text-align: center;
     font-size: 80px;
-    z-index: 10;
+    z-index: 50;
 
     width: 13px;
     height: 13px;
@@ -192,7 +192,7 @@ header {
     /* border: 2px solid red; */
 }
 
-.about {
+.about, .more {
     margin: 0 auto;
     max-width: 1100px;
     padding: 40px 30px;
@@ -201,7 +201,18 @@ header {
     flex-direction: column;
     justify-content: center;
     color: white;
-    /* border: 2px solid green; */
+    border: 3px solid red;
+}
+
+.about_bg {
+    width: 100%;
+    background: #15b7db;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    z-index: -10;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
@@ -216,18 +227,7 @@ header {
     }
 }
 
-.about_bg {
-    width: 100%;
-    background: #15b7db;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    z-index: -10;
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-}
-
-.about h1 {
+.about h1, .more h1 {
     font-size: 3.2rem; /* 80px */
     text-align: center;
     font-weight: 700;
@@ -311,6 +311,63 @@ header {
     font-weight: 700;
     color: black;
     transform: scale(1.15);
+}
+
+.more_bg {
+    width: 100%;
+    background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    z-index: -10;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.more {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 40px 30px;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    border: 3px solid red;
+}
+
+.collapse {
+    width: 100%;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 0.9rem;
+    text-align: left;
+    color: white;
+    outline: none;
+    border: none;
+
+}
+
+.collapse:active, .collapse:hover {
+    color: lightslategray;
+}
+
+.content {
+    padding: 0px 15px;
+    display: none;
+    overflow: hidden;
+    background-color: rgb(39, 39, 39);
+}
+
+.more .hobby_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 2px solid red;
+}
+.more h2 {
+    font-size: 0.9rem; /* 22px */
 }
 
 footer {
