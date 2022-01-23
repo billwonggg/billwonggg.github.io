@@ -169,9 +169,9 @@ header {
     margin: 10px 10px;
     width: 100%;
     max-width: 900px;
-    border-radius: 60px;
-    border: 10px solid rgba(2, 22, 70, 0.5);
-    background-color: rgba(62,114,239, 0.4);
+    border-radius: 50px;
+    border: 10px solid rgba(5, 25, 73, 0.637);
+    background-color: rgba(67, 115, 226, 0.4);
     padding: 0% 3%; 
 }
 
@@ -316,13 +316,8 @@ header {
 .more_bg {
     width: 100%;
     background: #141E30;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
     z-index: -10;
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
 }
 
 .more {
@@ -341,20 +336,34 @@ background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Fi
 .more button {
     width: 100%;
     cursor: pointer;
-    padding: 2%;
-    font-size: 0.9rem;  /* 22.5px */
-    font-weight: 600;
-    text-align: left;
-    border-radius: 30px;
-    color: white;
-    background-color: #141E30;
+    padding: 18px;
+    margin: 0.3vh 0vh;
     outline: none;
     border: none;
-    margin: 0.3vh 0vh;
+
+    font-size: 1rem;  /* 25px */
+    font-weight: 600;
+    text-align: left;
+    border-radius: 17px;
+    color: white;
+    background-color: rgb(20, 23, 48);
+      
 }
 
 .collapse:active, .collapse:hover {
     color: lightslategray;
+}
+.collapse::after {
+    content: '\002B';
+    color: white;
+    font-size: 1.1rem;  /* 27.5px */
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.collapse.active::after {
+    content: "\2212";
 }
 
 .content {
@@ -373,12 +382,25 @@ background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Fi
     font-size: 0.8rem; /* 20px */
 }
 
-.awards {
+.more h2 {
+    font-size: 1rem; /* 25px */
+}
+
+.more h3 {
+    font-size: 0.9rem; /* 22.5px */
+}
+
+.awards, .hobbies {
     margin: 1.5vh 0vh;
     padding: 0vmax 2vmax;
     border-radius: 25px;
     background-color: whitesmoke;
     border: 4px solid rgb(114, 114, 114);
+}
+
+.skills {
+    padding: 0vmax 2vmax;
+    background-color: whitesmoke;
 }
 
 .hobbies img {
@@ -388,13 +410,7 @@ background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Fi
     border: 5px solid white;
 }
 
-.more h2 {
-    font-size: 1rem; /* 25px */
-}
 
-.more h3 {
-    font-size: 0.9rem; /* 22.5px */
-}
 
 footer {
     height: 20px;
