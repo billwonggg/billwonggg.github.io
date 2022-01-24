@@ -253,9 +253,8 @@ header {
     color: white;
 }
 
-.about a:hover {
+.about a:hover{
     color: black;
-    font-weight: 700;
 }
 
 .about img{
@@ -351,9 +350,11 @@ header {
 }
 
 .collapse:active, .collapse:hover {
-    color: lightslategray;
+    text-decoration: underline;
+    color: rgb(64, 128, 224);
 }
-.collapse::after {
+
+.collapse:after {
     content: '\002B';
     color: white;
     font-size: 1.1rem;  /* 27.5px */
@@ -362,19 +363,19 @@ header {
     margin-left: 5px;
 }
 
-.collapse.active::after {
+.collapse.active:after {
     content: "\2212";
 }
 
 .content {
-    padding: 0% 2%;
+    padding: 0% 1%;
     overflow: hidden;
     max-height: 0px;
     transition: max-height 0.5s ease-out;
 
-    border-radius: 20px;
+    border-radius: 17px;
     color: black;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(161, 180, 216);
     white-space: normal;
 }
 
@@ -391,26 +392,33 @@ header {
 }
 
 .awards, .hobbies {
-    margin: 1.5vh 0vh;
+    margin: 1% 0%;
     padding: 0vmax 2vmax;
-    border-radius: 25px;
-    background-color: whitesmoke;
-    border: 4px solid rgb(114, 114, 114);
+    border-radius: 17px;
+    background-color: white;
+    border: 5px solid rgb(21, 49, 110);
 }
 
 .skills {
-    padding: 0vmax 2vmax;
-    background-color: whitesmoke;
+    background-color: white;
+    padding: 0% 4%;
 }
 
 .hobbies img {
     width: 80%;
     max-width: 500px;
     border-radius: 20px;
-    border: 5px solid white;
+    margin: 10px 0px;
 }
 
+.more a {
+    text-decoration: none;
+    color: rgb(29, 87, 192);
+}
 
+.more a:hover {
+    text-decoration: underline;
+}
 
 footer {
     height: 20px;
