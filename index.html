@@ -33,7 +33,7 @@
 
     <header>
         <canvas id="canvas1"></canvas>
-        <!-- <script src="./resources/scripts/background.js"></script> -->
+        <script src="./resources/scripts/background.js"></script>
 
         <div class="intro">
             <h1>Bill Wong</h1>
@@ -66,27 +66,33 @@
 
             <div class="links">
                 <div class="link_container">
-                    <div class="individualLink">
-                        <img id="linkedin" alt="LinkedIn" src="resources/icons/linkedin.png">
-                        <a href="https://www.linkedin.com/in/bill-wong1" target="blank">LinkedIn</a>
-                    </div>
+                    <a href="https://www.linkedin.com/in/bill-wong1" target="blank">
+                        <div class="individualLink">
+                            <img id="linkedin" alt="LinkedIn" src="resources/icons/linkedin.png">
+                            <p>LinkedIn</p>
+                        </div>
+                    </a>
                     
-                    <div class="individualLink">
-                        <img id="github" alt="GitHub" src="resources/icons/github.png">
-                        <a href="https://github.com/billwonggg" target="blank">GitHub</a>
-                    </div>
-                </div>         
-            
+                    <a href="https://github.com/billwonggg" target="blank">
+                        <div class="individualLink">
+                            <img id="github" alt="GitHub" src="resources/icons/github.png">
+                            <p>GitHub</p>
+                        </div>
+                    </a>
+                </div>
                 <div class="link_container">
-                    <div class="individualLink">
-                        <img id="hackerrank" alt="HackerRank" src="resources/icons/hackerrank.svg">
-                        <a href="https://www.hackerrank.com/bill_w" target="blank">HackerRank</a>
-                    </div>
-
-                    <div class="individualLink">
-                        <img id="leetcode" alt="LeetCode" src="resources/icons/leetcode.png">
-                        <a href="https://leetcode.com/LisaBlackpink/" target="blank">LeetCode</a>
-                    </div> 
+                    <a href="https://www.hackerrank.com/bill_w" target="blank">
+                        <div class="individualLink">
+                            <img id="hackerrank" alt="HackerRank" src="resources/icons/hackerrank.svg">
+                            <p>HackerRank</p>
+                        </div>
+                    </a>
+                    <a href="https://leetcode.com/LisaBlackpink/" target="blank">
+                        <div class="individualLink">
+                            <img id="leetcode" alt="LeetCode" src="resources/icons/leetcode.png">
+                            <p>LeetCode</p>
+                        </div>
+                    </a>
                 </div>              
             </div>          
         </div>
@@ -101,7 +107,7 @@
             <button type="button" class="collapse">Awards</button>
             <div class="content">
                 <div class="awards">
-                    <h2>UNSW Faculty of Engineering Dean's List, 2021</h2> 
+                    <h2>UNSW Faculty of Engineering Dean's List - 2021</h2> 
                     <h3>Highly Commended</h3>
                     <ul>
                         <li>Maintained a WAM (Weighted Average Mark) of 85+ during the 1st year at UNSW</li>
@@ -109,16 +115,22 @@
 
                 </div>
                 <div class="awards">
-                    <h2>ICPC South Pacific Divisional Contest, 2021</h2>
-                    <h3>Auckland Site 2nd Place</h3>
+                    <h2>ICPC South Pacific Divisional Contest - 2021</h2>
+                    <h3>
+                        <a href="./resources/files/2021-ICPC.pdf" target="blank">
+                            Auckland Site Second Prize</a>
+                    </h3>
                     <ul>
                         <li>Competed as a team of 3 against groups from other Universities across the region</li>
                         <li>Developed problem solving skills and algorithmic knowledge by solving a range of contest questions</li>
                     </ul>
                 </div>
                 <div class="awards">
-                    <h2>ASX Schools Sharemarket Game, 2018</h2>
-                    <h3>Australia National 1st Prize</h3>
+                    <h2>ASX Schools Sharemarket Game - 2018</h2>
+                    <h3>
+                        <a href="./resources/images/ASX.jpg" target="blank">
+                            Australia National 1st Prize</a>             
+                    </h3>
                     <ul>
                         <li>Annual competition held by ASX for secondary schools across Australia</li>
                         <li>Performed research on different industries, company backgrounds, and stocks trends with MACD</li>
@@ -130,53 +142,79 @@
             </div>
 
             <button type="button" class="collapse">Technical Skills</button>
-            <div class="content skills">
-                <p>I program in a variety of languages.</p>
-                <p>My most used programming languages are </p>
-                <ul>
-                    <li>C/C++</li>
-                    <li>Python.</li>
-                </ul>
-                <p>However, I am also familiar in</p>
-                <ul>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>Bash.</li>
-                </ul>
-                <p>Along with markup languages like</p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>LaTeX</li>
-                    <li>Markdown.</li>
-                </ul>
-                <p>I am also an excellent Microsoft Excel user, with an 
-                    <a href="https://www.credly.com/badges/aeb27d10-5b44-479b-a3dd-a9a0a92bebcd?source=linked_in_profile"
-                    target="blank">Excel Expert Certification</a> from Microsoft.</p>
+            <div class="content">
+                <div class="skills">
+                    <p>I program in a variety of languages.</p>
+                    <p>My most used programming languages are </p>
+                    <strong>
+                        <ul>
+                            <li>C/C++</li>
+                            <li>Python.</li>
+                        </ul>
+                    </strong>
+                    <p>However, I am also familiar in</p>
+                    <strong>
+                        <ul>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>Bash.</li>
+                        </ul>
+                    </strong>   
+                    <p>Along with markup languages like</p>
+                    <strong>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>LaTeX</li>
+                            <li>Markdown.</li>
+                        </ul>
+                    </strong>
+                    <p>I am also an excellent Microsoft Excel user, with an 
+                        <strong><a href="https://www.credly.com/badges/aeb27d10-5b44-479b-a3dd-a9a0a92bebcd?source=linked_in_profile"
+                        target="blank">Excel Expert Certification</a></strong> from Microsoft.
+                    </p>     
+                </div>         
             </div>
 
             <button type="button" class="collapse">Hobbies & Interests</button>
             <div class="content">           
                 <div class="hobbies">
                     <h2>Competitive Programming</h2>
-                    <p>ACM ICPC, Google KickStart, LeetCode, HackerRank.</p>
+                    <ul>
+                        <li>ACM ICPC</li>
+                        <li>Google KickStart</li>
+                        <li>Facebook Hacker Cup</li>
+                    </ul>
                     <img src="resources/images/cp.png">
                 </div>
                 <div class="hobbies">
                     <h2>Investing</h2>
-                    <p>General investing and company research, Credit-Suisse Investment Challenge.</p>
+                    <ul>
+                        <li>General investing and company research</li>
+                        <li>
+                            <strong>
+                                <a href="https://finance.equitysim.com/certificates/60a961d8c9fae40018fe9af1/60db9b17cb72da0011a335ea
+                                " target="blank">Credit-Suisse Investment Challenge</a>
+                            </strong>
+                        </li>
+                    </ul>
                     <img src="resources/images/invest.jpg">
                 </div>
+                <div class="hobbies">
+                    <h2>Podcasts</h2>
+                    <p>Financial and tech news:</p>
+                    <ul>
+                        <li>WSJ What's News</li>
+                        <li>The Economist</li>
+                        <li>Bloomberg Businessweek</li>
+                    </ul>
+                    <img src="resources/images/podcast.jpg">
+                </div>  
                 <div class="hobbies">
                     <h2>Photography</h2>
                     <p>Architectural photography.</p>
                     <img src="resources/images/photography.jpg">
-                </div>
-                <div class="hobbies">
-                    <h2>Podcasts</h2>
-                    <p>Financial and tech news. WSJ What's News, The Economist, Bloomberg Businessweek, and many more.</p>
-                    <img src="resources/images/podcast.jpg">
-                </div>               
+                </div>             
             </div>
         </div>
         <script src="resources/scripts/collapsible.js"></script>

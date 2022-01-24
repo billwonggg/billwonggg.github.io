@@ -253,9 +253,8 @@ header {
     color: white;
 }
 
-.about a:hover {
+.about a:hover{
     color: black;
-    font-weight: 700;
 }
 
 .about img{
@@ -276,41 +275,45 @@ header {
 
 .link_container {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     /* border: 4px solid red; */
 }
-.individualLink {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.links a {
+    text-decoration: none;
+    transition: transform .2s;
 
     border: 3px solid white; 
     border-radius: 50px;
-    padding: 2px 10px;
+    padding: 0px 10px;
     margin: 0.5vh 1vw;
 }
-
-/* hyperlinks for platforms */
-.individualLink a {
-    min-width: 12ch;
-    /* border-radius: 40px; */
-    font-weight: 600;
-    text-align: center; 
-    text-decoration: none;
-    transition: transform .2s;
+.individualLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.individualLink a:link, .individualLink a:visited {
+.individualLink p {
+    min-width: 12ch;
+    font-weight: 600;
+    text-align: center; 
+}
+
+.links a:link, .links a:visited {
     color: white;
     /* border: 2px solid white;  */
 }
 
-.individualLink a:hover, .individualLink a:active  {
+.links a:hover, .links a:active  {
     /* background-color: white; */
     font-weight: 700;
     color: black;
-    transform: scale(1.15);
+    border-color: black;
+    transform: scale(1.05);
 }
 
 .more_bg {
@@ -351,9 +354,11 @@ header {
 }
 
 .collapse:active, .collapse:hover {
-    color: lightslategray;
+    text-decoration: underline;
+    color: rgb(64, 128, 224);
 }
-.collapse::after {
+
+.collapse:after {
     content: '\002B';
     color: white;
     font-size: 1.1rem;  /* 27.5px */
@@ -362,19 +367,19 @@ header {
     margin-left: 5px;
 }
 
-.collapse.active::after {
+.collapse.active:after {
     content: "\2212";
 }
 
 .content {
-    padding: 0% 2%;
+    padding: 0% 1%;
     overflow: hidden;
     max-height: 0px;
     transition: max-height 0.5s ease-out;
 
-    border-radius: 20px;
+    border-radius: 17px;
     color: black;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(122, 148, 197);
     white-space: normal;
 }
 
@@ -390,27 +395,29 @@ header {
     font-size: 0.9rem; /* 22.5px */
 }
 
-.awards, .hobbies {
-    margin: 1.5vh 0vh;
+.awards, .hobbies, .skills{
+    margin: 1% 0%;
     padding: 0vmax 2vmax;
-    border-radius: 25px;
-    background-color: whitesmoke;
-    border: 4px solid rgb(114, 114, 114);
-}
-
-.skills {
-    padding: 0vmax 2vmax;
-    background-color: whitesmoke;
+    border-radius: 17px;
+    background-color: white;
+    border: 5px solid rgb(21, 49, 110);
 }
 
 .hobbies img {
     width: 80%;
     max-width: 500px;
     border-radius: 20px;
-    border: 5px solid white;
+    margin: 10px 0px;
 }
 
+.more a {
+    text-decoration: none;
+    color: rgb(29, 87, 192);
+}
 
+.more a:hover {
+    text-decoration: underline;
+}
 
 footer {
     height: 20px;
