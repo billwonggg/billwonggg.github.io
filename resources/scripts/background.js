@@ -1,22 +1,13 @@
+/* 
+    Script for background animation on the first page
+*/
+
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let particlesArray = null;
-
-// let mouse = {
-//     x: null,
-//     y: null,
-//     radius: (canvas.height / 80) * (canvas.width / 80)
-// }
-
-// window.addEventListener('mousemove',
-//     function (event) {
-//         mouse.x = event.x;
-//         mouse.y = event.y;
-//     }
-// );
 
 class Particle {
     constructor(x, y, dirX, dirY, size, color) {
@@ -27,6 +18,7 @@ class Particle {
         this.size = size;
         this.color = color;
     }
+
     // draw individual particle
     draw() {
         ctx.beginPath();
@@ -43,24 +35,6 @@ class Particle {
         if (this.y > canvas.height || this.y < 0)
             this.dirY = -this.dirY;
         
-        // // collision detection
-        // let distX = mouse.x - this.x;
-        // let distY = mouse.y - this.y;
-        // let distance = Math.sqrt(distX * distX + distY * distY);
-        // if (distance < mouse.radius + this.size) {
-        //     if (mouse.x < this.x && this.x < canvas.width - this.size * 10) {
-        //         this.x += 7;
-        //     }
-        //     if (mouse.x > this.x && this.x > this.size * 10) {
-        //         this.x -= 7;
-        //     }
-        //     if (mouse.y < this.y && this.y < canvas.height - this.size * 10) {
-        //         this.y += 7;
-        //     }
-        //     if (mouse.y > this.y && this.y > this.size * 10) {
-        //         this.y -= 7;
-        //     }
-        // }
         // update position
         this.x += this.dirX;
         this.y += this.dirY;
@@ -110,7 +84,7 @@ const connect = () => {
                 + (particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y);
 
             if (distance < canvas.width * canvas.height) {
-                opacity = 1 - (distance / 150000);
+                opacity = 1 - (distance / 90000);
                 ctx.strokeStyle = 'rgba(215,215,215,' + opacity + ')';
                 ctx.lineWidth = 7;
                 ctx.beginPath();
@@ -141,14 +115,6 @@ window.addEventListener('resize',
         init();
     }
 )
-
-// // mouse out event
-// window.addEventListener('mouseout',
-//     function() {
-//         mouse.x = undefined;
-//         mouse.y = undefined;
-//     }
-// )
 
 init();
 animate();
