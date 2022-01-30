@@ -313,6 +313,8 @@ header {
     font-weight: 700;
     color: black;
     border-color: black;
+    border-width: 4px;
+    text-decoration: underline;
     transform: scale(1.05);
 }
 
@@ -379,7 +381,7 @@ header {
 
     border-radius: 17px;
     color: black;
-    background-color: rgb(207, 222, 253);
+    background-color: rgb(184, 201, 235);
     white-space: normal;
 }
 
