@@ -20,15 +20,15 @@ window.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 span.classList.remove('active');
                 span.classList.add('fade')
-            }, (idx + 1) * 40)
+            }, (idx + 1) * 35)
         })
-    }, 3300);
+    }, 3700);
 
     setTimeout(() => {
         intro.style.top = '-100vh';
-    }, 3600);
+    }, 3700);
 
     setTimeout(() => {
         resetScroll();
-    }, 3650);   
+    }, 3750);   
 })
