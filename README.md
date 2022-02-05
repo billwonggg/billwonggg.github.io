@@ -1,14 +1,21 @@
-# Personal Website
+# Personal Website - [Link Here](billw.space)
 
-My first major project after learning a few front end languages.
+## My first major project after learning some few front end languages.
 
-This website was built from scratch using plain HTML/CSS/JavaScript.
+<br>
 
-I was able to gain a lot of hands-on experience with
-* Styling webpage elements with CSS
-* Structuring the webpage with HTML classes and divs
-* Creating animations with CSS/JavaScript
-* Debugging JavaScript scripts
-* Front-end UI design
+### I was able to gain hands-on experience with:
 
-Enjoy!
+> - Styling webpage elements with CSS
+> - Structuring the webpage with HTML classes and divs
+> - Creating animations with CSS/JavaScript
+> - Debugging JavaScript scripts
+> - Front-end UI design
+
+<br>
+
+### This website was built from scratch using plain HTML/CSS/JavaScript.
+
+<br>
+
+### Enjoy!
