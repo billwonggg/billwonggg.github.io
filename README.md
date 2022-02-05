@@ -2,8 +2,6 @@
 
 ## My first major project after learning some few front end languages.
 
-<br>
-
 ### I was able to gain hands-on experience with:
 
 > - Styling webpage elements with CSS
