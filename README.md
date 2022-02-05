@@ -1,8 +1,6 @@
-# Personal Website - [Link Here](billw.space)
+# Personal Website - [Link Here](https://billw.space)
 
 ## My first major project after learning some few front end languages.
-
-<br>
 
 ### I was able to gain hands-on experience with:
 
