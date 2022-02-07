@@ -45,10 +45,14 @@ const addParticle = (pArr) => {
   let size = Math.random() * 2 + 8;
   let x = Math.random() * (canvas.width - size * 2 - size * 2) + size * 2;
   let y = Math.random() * (canvas.height - size * 2 - size * 2) + size * 2;
+  let orientationX = Math.random();
+  let orientationY = Math.random();
   // horizontal speed between 0.6 and 1.2
-  let dirX = Math.random() * (1.2 - 0.6) + 0.6;
+  let dirX =
+    (Math.random() * (1.2 - 0.6) + 0.6) * (orientationX < 0.5 ? 1 : -1);
   // vertical speed between 0.3 and 0.7
-  let dirY = Math.random() * (0.7 - 0.3) + 0.3;
+  let dirY =
+    (Math.random() * (0.7 - 0.3) + 0.3) * (orientationY < 0.5 ? 1 : -1);
   let color = "rgb(215,215,215)";
 
   pArr.push(new Particle(x, y, dirX, dirY, size, color));
