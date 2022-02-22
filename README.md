@@ -1,17 +1,17 @@
 # **Personal Website** - [_Link Here_](https://billw.space)
 
-> ### My first project after learning some front end languages.
+> ### This is my first project after learning some Front-End languages.
 
-### This website was built from scratch using plain HTML/CSS/JavaScript.
+#### This website was built from scratch using plain HTML/CSS/JavaScript, with no libraries.
 
-> ### I was able to gain hands-on experience with:
+> #### I was able to gain first hand experience with:
 >
+> - Structuring the webpage information with HTML elements
 > - Styling webpage elements with CSS
-> - Structuring the webpage with HTML classes and divs
-> - Creating animations with CSS/JavaScript
-> - Debugging JavaScript scripts
-> - Front-end UI design
+> - Creating animations with CSS/JavaScript, which interacts with mouse-clicks and mouse-hovers
+> - Debugging JavaScript functions
+> - Front-End UI design
 
 ### Desktop Preview:
 
-![Demo](./resources/images/personal.gif)
+![Demo](./resources/images/preview.gif)
