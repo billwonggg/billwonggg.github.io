@@ -420,6 +420,7 @@ header {
 }
 
 .more p,
+.more h4,
 .more li {
   font-size: 0.8rem; /* 20px */
 }
