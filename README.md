@@ -1,6 +1,6 @@
-# **Personal Website** - [_Link Here_](https://billw.space)
+# **Old Personal Website** - [_Link Here_](https://billwonggg.github.io)
 
-> ### This is my first project after learning some Front-End languages.
+> ### This is my first personal project after learning some front-end languages.
 
 #### This website was built from scratch using plain HTML/CSS/JavaScript, with no libraries.
 
