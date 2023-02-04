@@ -1,6 +1,7 @@
 # **Old Personal Website** - [_Link Here_](https://billwonggg.github.io)
 
-### Note: This is my old personal website, and is not maintained regularly. Visit my [new personal website](https://billw.space).
+### Note: This is my old personal website, and is not maintained regularly. Visit my [new personal website](https://billw.info).
+
 <br/>
 
 > ### This is my first personal project after learning some front-end languages.
